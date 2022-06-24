@@ -1,0 +1,385 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "aaddress",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_prod_code",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "add_batch",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_batch_number",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_prod_code",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_product_amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_description",
+						"type": "string"
+					}
+				],
+				"name": "add_batch_model",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_prod_code",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_type",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "_is_static",
+						"type": "bool"
+					},
+					{
+						"internalType": "string",
+						"name": "_value",
+						"type": "string"
+					}
+				],
+				"name": "add_field_batch",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_prod_code",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_type",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "_is_static",
+						"type": "bool"
+					},
+					{
+						"internalType": "string",
+						"name": "_value",
+						"type": "string"
+					}
+				],
+				"name": "add_field_prod",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_prod_code",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_description",
+						"type": "string"
+					}
+				],
+				"name": "add_prod_model",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_prod_code",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "add_product",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_serial",
+						"type": "string"
+					},
+					{
+						"internalType": "string[]",
+						"name": "_covers",
+						"type": "string[]"
+					}
+				],
+				"name": "cover",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_prod_code",
+						"type": "string"
+					}
+				],
+				"name": "get_all_serials",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_prod_code",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_field_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_value",
+						"type": "string"
+					}
+				],
+				"name": "set_batch_model",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_serial",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_field_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_value",
+						"type": "string"
+					}
+				],
+				"name": "set_batch_profile",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_serial",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_field_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_value",
+						"type": "string"
+					}
+				],
+				"name": "set_prod_profile",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "source",
+						"type": "string"
+					}
+				],
+				"name": "toBytes16",
+				"outputs": [
+					{
+						"internalType": "bytes16",
+						"name": "result",
+						"type": "bytes16"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "source",
+						"type": "string"
+					}
+				],
+				"name": "toBytes32",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "result",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Stakeholder.sol": "Stack_holder"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Production_line.sol": {
+			"keccak256": "0x20c55f000277dc987e6caa166d3fd2eeec11dda2c4fcbf51b2727db2e63add6a",
+			"urls": [
+				"bzz-raw://c02db080b89e082cf81ff0df3944c723568360eb4e4a16caf456b6e620b161b1",
+				"dweb:/ipfs/QmbLPMEAExJyiPscH8nDuTdhZTq8R5F4nTaUpfZN5QuW2K"
+			]
+		},
+		"contracts/Stakeholder.sol": {
+			"keccak256": "0x3ab23870e666270f3daa890e11dc1f732c3a0dd3dde63d5dc0d15f48ec4d557a",
+			"urls": [
+				"bzz-raw://0f7fc1fe54bc3a8cb4a97437c3002b82f62626398113565a35300a4403a82fc0",
+				"dweb:/ipfs/QmV5zysYHDqY9koJpckuu1k65p2TyQnD7wFXEZ2zUMoLin"
+			]
+		},
+		"contracts/Strings.sol": {
+			"keccak256": "0x2e62033f678c01493820b516bfc0c29a715cd3effed3c817d4a185626d567561",
+			"urls": [
+				"bzz-raw://6c54aba1fdd5fe84bd4defe8bb530da46d9bfccacd3e28be3fb160c70fdbf1a2",
+				"dweb:/ipfs/QmYUtrxV6JDk9RAcDGnvZk1LZTVNxKNWexqvNeh3Uw5izp"
+			]
+		}
+	},
+	"version": 1
+}
